@@ -46,3 +46,56 @@ Gym Assistant is an AI‑driven chat assistant that helps you reach your fitness
    ```bash
    git clone https://github.com/yourusername/gym-assistant.git
    cd gym-assistant
+
+2. **Create a virtual environment & install dependencies**
+
+```bash
+python -m venv venv
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
+pip install -r requirements.txt
+```
+
+3. **Set your OpenAI API key**
+
+```bash
+export OPENAI_API_KEY="YOUR_API_KEY"    # macOS/Linux
+set OPENAI_API_KEY="YOUR_API_KEY"       # Windows
+```
+
+4. **Run the Streamlit app**
+```bash
+streamlit run frontend/app.py
+```
+
+## Project Structure
+
+```bash
+gym-assistant/
+│
+├── frontend/
+│   └── app.py               # Streamlit UI + LangChain + tools
+│
+├── data/
+│   └── exercises.db         # SQLite or CSV with exercise metadata
+│
+├── prompts/
+│   └── workout_template.jinja
+│
+├── requirements.txt         # streamlit, langchain, openai, jinja2, sqlite3
+└── README.md
+```
+
+## Usage
+1. Open the app in your browser (usually at http://localhost:8501).
+2. Select one of the four modules (Workout, Nutrition, Supplements, Schedule).
+3. Fill in the required inputs and click Generate.
+4. Review and follow your personalized plan.
+
+## Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check issues page or submit a pull request.
+
+## License
+This project is MIT‑licensed. See the LICENSE file for details.
+
+© 2025 Gym Assistant Project. Developed by Lauro Pereira.

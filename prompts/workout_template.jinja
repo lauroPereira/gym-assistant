@@ -1,0 +1,16 @@
+{% raw %}
+Você é um treinador físico especialista. Gere um plano de treino de {{ dias_por_semana }} dias para {{ objetivo }}.
+Considere que o usuário tem acesso ao seguinte equipamento: {{ equipamentos | join(", ") }}.
+
+Retorne a resposta como um objeto JSON no formato exato abaixo, sem texto adicional:
+{
+"Dia 1": [
+{"exercicio": "Nome do Exercício", "series": número, "repeticoes": "intervalo ou número"},
+...
+],
+...
+"Dia {{ dias_por_semana }}": [...]
+}
+{% endraw %}
+
+Assegure-se de que o plano inclua exercícios apropriados para o objetivo, organizados por dia, com valores claros de séries e repetições.
