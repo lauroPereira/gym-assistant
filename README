@@ -1,0 +1,48 @@
+# Gym Assistant
+
+Gym Assistant is an AI‑driven chat assistant that helps you reach your fitness, nutrition, supplementation, and personal organization goals—directly in your browser. Built with LangChain and Streamlit, it leverages the OpenAI API to generate customized workout plans, meal suggestions, supplement recommendations, and daily schedules.
+
+## Features
+
+1. **Workout Programming**  
+   - Generate hypertrophy, fat‑loss, or conditioning programs  
+   - Customize by days per week and available equipment  
+   - Get detailed sets, reps, and exercise breakdowns
+
+2. **Nutrition Planning**  
+   - Calculate macronutrients and total calories  
+   - Receive complete meal plans and substitution suggestions  
+   - Adjust menus based on dietary preferences and restrictions
+
+3. **Supplement Guidance**  
+   - Get evidence‑based supplement recommendations  
+   - Tailor suggestions to your profile and objectives  
+   - Learn optimal timing and dosages
+
+4. **Personal Scheduling**  
+   - Create weekly or monthly training and meal schedules  
+   - Set in‑app reminders for workouts, meals, and supplement intake  
+   - Sync tasks with your calendar (coming soon)
+
+## Tech Stack
+
+- **LangChain**: Orchestrates interactions with the LLM and tool functions  
+- **OpenAI API**: Provides the LLM backbone (GPT‑4 or GPT‑3.5)  
+- **Streamlit**: Lightweight web interface for user interaction  
+- **Jinja2**: Templating engine for prompt generation  
+- **SQLite / CSV**: Local store for exercise metadata and caching
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+  
+- [OpenAI API Key](https://platform.openai.com/account/api-keys)  
+- Git
+
+### Installation
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/yourusername/gym-assistant.git
+   cd gym-assistant
