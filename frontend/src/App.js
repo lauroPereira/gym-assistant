@@ -3,7 +3,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
-import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import TrainingPlan from './pages/TrainingPlan';
@@ -12,6 +11,7 @@ import Habits from './pages/Habits';
 import QualityOfLife from './pages/QualityOfLife';
 import Profile from './pages/Profile';
 import LoadingSpinner from './components/LoadingSpinner';
+import Orchestrator from './pages/Orchestrator';
 
 function App() {
   const { isAuthenticated, loading } = useAuth();
@@ -44,10 +44,10 @@ function App() {
         >
           <Route index element={<Navigate to="/dashboard" />} />
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="agents/training" element={<AgentTraining />} />
-          <Route path="agents/diet" element={<AgentDiet />} />
-          <Route path="agents/habit" element={<AgentHabit />} />
-          <Route path="agents/qol" element={<AgentQol />} />
+          <Route path="agents/training" element={<TrainingPlan />} />
+          <Route path="agents/diet" element={<DietPlan />} />
+          <Route path="agents/habit" element={<Habits />} />
+          <Route path="agents/qol" element={<QualityOfLife />} />
           <Route path="orchestrator" element={<Orchestrator />} />
           <Route path="training" element={<TrainingPlan />} />
           <Route path="diet" element={<DietPlan />} />

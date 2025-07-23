@@ -4,8 +4,8 @@ Training Agent - Generates personalized fitness and training plans.
 from typing import Dict, Any, List
 import json
 from datetime import datetime, timedelta
-from backend.agents.base_agent import BaseMCPAgent
-from backend.models.schemas import TrainingPlan
+from agents.base_agent import BaseMCPAgent
+from models.schemas import TrainingPlan
 import logging
 
 logger = logging.getLogger(__name__)

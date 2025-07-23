@@ -7,9 +7,9 @@ from fastapi.security import HTTPBearer
 import os
 from dotenv import load_dotenv
 
-from backend.core.config import settings
-from backend.api.routes import mcp, auth, orchestrator
-from backend.core.database import init_db
+from core.config import settings
+from api.routes import mcp, auth, orchestrator
+from core.database import init_db
 
 # Load environment variables
 load_dotenv()

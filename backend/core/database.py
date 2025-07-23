@@ -2,7 +2,7 @@
 Database configuration and initialization for Supabase.
 """
 from supabase import create_client, Client
-from backend.core.config import settings
+from core.config import settings
 import logging
 
 logger = logging.getLogger(__name__)

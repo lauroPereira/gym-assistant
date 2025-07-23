@@ -6,8 +6,8 @@ from datetime import datetime
 import json
 import logging
 
-from backend.core.database import get_supabase
-from backend.models.schemas import MCPTool, MCPResource, MCPPrompt, MCPInvokeRequest, MCPInvokeResponse
+from core.database import get_supabase
+from models.schemas import MCPTool, MCPResource, MCPPrompt, MCPInvokeRequest, MCPInvokeResponse
 
 logger = logging.getLogger(__name__)
 

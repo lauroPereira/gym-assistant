@@ -4,8 +4,8 @@ Diet Agent - Generates personalized nutrition and diet plans.
 from typing import Dict, Any, List
 import json
 from datetime import datetime, timedelta
-from backend.agents.base_agent import BaseMCPAgent
-from backend.models.schemas import DietPlan
+from agents.base_agent import BaseMCPAgent
+from models.schemas import DietPlan
 import logging
 
 logger = logging.getLogger(__name__)

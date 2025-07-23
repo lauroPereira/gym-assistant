@@ -4,8 +4,8 @@ Quality of Life (QoL) Agent - Assesses and provides recommendations for overall 
 from typing import Dict, Any, List
 import json
 from datetime import datetime, timedelta
-from backend.agents.base_agent import BaseMCPAgent
-from backend.models.schemas import QoLMetrics
+from agents.base_agent import BaseMCPAgent
+from models.schemas import QoLMetrics
 import logging
 
 logger = logging.getLogger(__name__)

@@ -4,12 +4,12 @@ Orchestrator Agent - Coordinates and aggregates responses from all other agents.
 from typing import Dict, Any, List
 import asyncio
 from datetime import datetime
-from backend.agents.base_agent import BaseMCPAgent
-from backend.agents.training_agent import TrainingAgent
-from backend.agents.diet_agent import DietAgent
-from backend.agents.habit_agent import HabitAgent
-from backend.agents.qol_agent import QoLAgent
-from backend.models.schemas import OrchestratorResponse
+from agents.base_agent import BaseMCPAgent
+from agents.training_agent import TrainingAgent
+from agents.diet_agent import DietAgent
+from agents.habit_agent import HabitAgent
+from agents.qol_agent import QoLAgent
+from models.schemas import OrchestratorResponse
 import logging
 
 logger = logging.getLogger(__name__)

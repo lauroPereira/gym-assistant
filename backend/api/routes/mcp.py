@@ -2,9 +2,9 @@
 MCP Server API routes for the Health & Quality of Life MCP App.
 """
 from fastapi import APIRouter, HTTPException, status, Depends
-from backend.models.schemas import MCPInvokeRequest, MCPInvokeResponse
-from backend.mcp.server import mcp_server
-from backend.core.auth import get_current_user
+from models.schemas import MCPInvokeRequest, MCPInvokeResponse
+from mcp.server import mcp_server
+from core.auth import get_current_user
 import logging
 
 logger = logging.getLogger(__name__)

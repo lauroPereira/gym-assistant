@@ -3,9 +3,9 @@ Authentication routes for the Health & Quality of Life MCP App.
 """
 from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security import HTTPBearer
-from backend.models.schemas import UserLogin, UserRegister, Token, User
-from backend.core.auth import verify_password, get_password_hash, create_user_token, get_current_user
-from backend.core.database import get_supabase
+from models.schemas import UserLogin, UserRegister, Token, User
+from core.auth import verify_password, get_password_hash, create_user_token, get_current_user
+from core.database import get_supabase
 import uuid
 import logging
 

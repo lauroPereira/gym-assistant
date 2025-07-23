@@ -4,8 +4,8 @@ Base MCP Agent class for the Health & Quality of Life App.
 from abc import ABC, abstractmethod
 from typing import Dict, Any, List, Optional
 import logging
-from backend.mcp.server import mcp_server
-from backend.models.schemas import MCPInvokeRequest
+from mcp.server import mcp_server
+from models.schemas import MCPInvokeRequest
 
 logger = logging.getLogger(__name__)
 

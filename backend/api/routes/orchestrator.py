@@ -3,9 +3,9 @@ Orchestrator API routes for the Health & Quality of Life MCP App.
 """
 from fastapi import APIRouter, HTTPException, status, Depends
 from typing import Dict, Any, Optional
-from backend.agents.orchestrator_agent import OrchestratorAgent
-from backend.core.auth import get_current_user
-from backend.models.schemas import OrchestratorResponse
+from agents.orchestrator_agent import OrchestratorAgent
+from core.auth import get_current_user
+from models.schemas import OrchestratorResponse
 import logging
 
 logger = logging.getLogger(__name__)
